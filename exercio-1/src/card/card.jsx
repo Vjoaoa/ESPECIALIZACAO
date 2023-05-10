@@ -1,9 +1,11 @@
 import axios from "axios"
 import "./card.css"
 import { useEffect, useState} from "react"
-
+import Nav from '../nav/nav'
+import { Link } from "react-router-dom"
 const Card = () => {
    const[produto,SetProduto] = useState([])
+//    const navigate = useNavigate();
 
     useEffect(()=> {
         getProduct()
@@ -20,23 +22,32 @@ const Card = () => {
         catch (error) {
             alert("error ao buscar produtos")
         }
-    }
+    }        
     
     return (
 
     <>
+{/* 
+     <Nav/>  */}
+
         <div className="cardCompleto">
             {
                 produto.map((product)=>(
-                    <div className="card">
-                        <img src={product.thumbnail}/>
+                   <>
+                    <Link className="link" to={`/product/${product.id}`}>
+                        <div className="card">
+                            <img className="img" src={product.thumbnail}/>
 
-                        <div className="detail">
-                            <h4 className="nome">{product.brand}</h4>
-                            <p className="categoria">{product.category}</p>
-                            <p className="preco">R$ {product.price}</p>
+                            <div className="detail">
+                                <h4 className="nome">{product.brand}</h4>
+                                <p className="categoria">{product.category}</p>
+                                <p className="preco">R$ {product.price}</p>
+                            </div>
                         </div>
-                    </div>
+                    </Link>
+                   
+                   </>
+                    
                 ))
             }
         </div>

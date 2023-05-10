@@ -1,0 +1,69 @@
+.imgDetails{
+    width: 508px;
+    height: 433px;
+}
+
+.nomeDetails{
+    width: 1142px;
+    height: 31px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 37px;
+    color: #2E2E2E;
+}
+.tipoDetails{
+    width: 155px;
+    height: 17px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    color: #F3BD30;
+}
+
+.textoDetails{
+    width: 1061px;
+    height: 147px;
+    left: 696px;
+    top: 456px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+}
+
+.caixaDetails{
+    box-sizing: border-box;
+    margin-top: 8vh;
+    margin-left: 8vw;
+    width: 80vw;
+    background: #FFFFFF;
+    border: 1px solid #1f1c1c;
+    border-radius: 8px;
+}
+
+.precoDetail{
+    width: 241px;
+    height: 36px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 46px;
+    color: #2E2E2E;
+}
+
+.divPrincipal{
+    display: flex;
+    margin-left: 8vw;
+    margin-top: 10vh;
+}
+
+.divNome{
+    margin-left: 2vw;
+}
