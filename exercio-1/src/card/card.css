@@ -1,0 +1,48 @@
+.card{
+    display: flex;
+    border: 1px solid #C4C4C4;
+    border-radius: 1vw;
+    width: 20vw;
+    height: 18.5vh;
+    margin-bottom: 4vh;
+    margin-left: 3vw;
+}
+img{
+    border-radius: 1vw;
+    width: 8.6vw;
+}
+.detail{
+    margin-left: 4vw;
+}
+
+.cardCompleto{
+    display: grid;
+    grid-template-columns: 24vw 24vw 24vw 24vw;
+}
+
+.nome{
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #2E2E2E;
+}
+
+.categoria{
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    color: #F3BD30;
+}
+
+.preco{
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: #2E2E2E;
+}
