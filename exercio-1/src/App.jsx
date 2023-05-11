@@ -4,14 +4,16 @@ import Card from './card/card'
 import Nav from './nav/nav'
 import { Route , BrowserRouter, Routes } from 'react-router-dom'
 import Details from './details'
+import Login from './loguin'
 
 function App() {
 
   return (
    <BrowserRouter>
 
-      <Nav/>
+      {/* <Nav/> */}
       <Routes>
+          <Route path='/login' element={<Login/>}/>
           <Route path="/" element={<Card />} />
           <Route path="/product/:id" element={<Details />} />
           <Route path="*" element={<>

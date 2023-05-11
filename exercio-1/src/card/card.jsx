@@ -27,10 +27,12 @@ const Card = () => {
     return (
 
     <>
-{/* 
-     <Nav/>  */}
+
+     <Nav/> 
 
         <div className="cardCompleto">
+
+
             {
                 produto.map((product)=>(
                    <>

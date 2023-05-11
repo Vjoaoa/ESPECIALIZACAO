@@ -1,8 +1,8 @@
 import axios from "axios";
 import { useEffect, useState} from "react";
 import { Link, useParams } from "react-router-dom";
+import Nav from "../nav/nav";
 import "./details.css"
-
 
 
 const Details = () => {
@@ -44,7 +44,10 @@ const Details = () => {
     console.log(detail);
     return(
         <>
-            
+
+            <Nav/>
+
+
             <div className="divPrincipal">
                 <div className="divIMG">
                     <img className="imgDetails" src={detail.thumbnail} alt="" />
@@ -58,7 +61,7 @@ const Details = () => {
             <div className="caixaDetails">
             <p className="textoDetails">{detail.description}</p>
             </div>
-
+{/* 
             {
             productDetail.map((product)=>(
                    <>
@@ -80,7 +83,7 @@ const Details = () => {
                     
                 ))
             }
-            
+             */}
         </>
     )
 }

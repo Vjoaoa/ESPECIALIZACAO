@@ -1,0 +1,75 @@
+.backgroudLogin{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    left: 0px;
+    top: 0px;
+    background: #512DA8;
+    text-align: center;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 453px;
+    height: 488px;
+    background: #FFFFFF;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    
+}
+
+.h1Login{
+    text-align: center;
+    width: 101px;
+    height: 46px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 46px;
+    color: #000000;
+    margin-left: 9.5vw;
+}
+
+.inputLogin{
+    box-sizing: border-box;
+    width: 393px;
+    height: 55px;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    border-radius: 20px;
+    margin-bottom: 4vh;
+
+}
+
+.buttonLogin{
+    box-sizing: border-box;
+    width: 393px;
+    height: 55px;
+    background: #F3BD30;
+    border: 1px solid #F3BD30;
+    border-radius: 20px;
+}
+
+.pLogin{
+    width: 351px;
+    height: 56px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: #000000;
+    margin-left: 2.6vw;
+}
+
+.divForm{
+    margin-left: 1vh;
+}
