@@ -1,7 +1,9 @@
 import axios from "axios";
-import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useEffect, useState} from "react";
+import { Link, useParams } from "react-router-dom";
 import "./details.css"
+
+
 
 const Details = () => {
     const params = useParams();
@@ -57,10 +59,11 @@ const Details = () => {
             <p className="textoDetails">{detail.description}</p>
             </div>
 
-            {/* {
+            {
             productDetail.map((product)=>(
                    <>
                     
+                    <Link className="link" to={`/product/${product.id}`}>
                         <div className="card">
                             <img className="img" src={product.thumbnail}/>
 
@@ -70,12 +73,13 @@ const Details = () => {
                                 <p className="preco">R$ {product.price}</p>
                             </div>
                         </div>
+                    </Link>
                     
                    
                    </>
                     
                 ))
-            } */}
+            }
             
         </>
     )

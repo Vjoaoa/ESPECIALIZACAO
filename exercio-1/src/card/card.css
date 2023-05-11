@@ -6,6 +6,8 @@
     height: 18.5vh;
     margin-bottom: 4vh;
     margin-left: 3vw;
+    
+    
 }
 .img{
     border-radius: 1vw;
@@ -18,6 +20,8 @@
 .cardCompleto{
     display: grid;
     grid-template-columns: 24vw 24vw 24vw 24vw;
+    margin-top: 22vh;
+   
 }
 
 .nome{
