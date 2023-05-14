@@ -1,7 +1,23 @@
 import "./login.css" 
+import { useContext, useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { MyContext } from "../contexts/MyContext";
 
 
 const Login = () => {
+
+    const { changeUserEmail } = useContext(MyContext);
+
+    const navigate = useNavigate();
+  
+    const [formData, setFormData] = useState({ email: "", password: "" });
+
+    function logar() {
+        /*  alert(JSON.stringify(formData)); */
+        changeUserEmail(formData.email);
+        navigate("/");
+    }
+
     return (
         
         <>
@@ -15,11 +31,19 @@ const Login = () => {
 
                     <p className="pLogin">Insira seus dados para entrar no sistema</p>
 
-                    <input className="inputLogin" type="email" placeholder="Email"/>
+                    <input
+                    onChange={(event) => setFormData({ ...formData, email: event.target.value })} 
+                    className="inputLogin" 
+                    type="email" 
+                    placeholder="Email"/>
 
-                    <input className="inputLogin" type="password" placeholder="Senha"/>
+                    <input
+                    onChange={(event) =>setFormData({ ...formData, password: event.target.value })} 
+                    className="inputLogin"
+                    type="password"
+                    placeholder="Senha"/>
 
-                    <button className="buttonLogin">Entrar</button>
+                    <button onClick={logar} className="buttonLogin">Entrar</button>
                 
                 </div>
 

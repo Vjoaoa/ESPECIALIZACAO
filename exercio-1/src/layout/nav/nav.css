@@ -1,0 +1,71 @@
+.nav{
+    box-sizing: border-box;
+    position: absolute;
+    width: 100vw;
+    height: 10vh;
+    left: 1px;
+    top: 0px;
+    background: #512DA8;
+    text-align: center;
+    
+}
+
+h1{
+    /* width: 263px;
+    height: 46px; */
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 46px;
+    color: #FFFFFF;
+}
+
+.pEmail{
+    position: absolute;
+    width: 211px;
+    height: 32px;
+    left: 72vw;
+    top: 1vh;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 32px;
+    color: #FFFFFF;
+
+}
+
+.btnSair{
+    position: absolute;
+    width: 97px;
+    height: 43px;
+    left: 88vw;
+    top: 28px;
+    background: #F3BD30;
+    border-radius: 20px;
+}
+
+@media only screen and (max-width: 600px){
+    .btnSair{
+        position: absolute;
+        left: 74vw;
+        
+    }
+    h1{
+        height: 1vh;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 46px;
+    }
+    .pEmail{
+        position: absolute;
+        width: 1px;
+        height: 34px;
+        left: 30vw;
+        top: 4vh;
+        font-weight: 20;
+        font-size: 18px;
+        line-height: 32px;
+    }
+}

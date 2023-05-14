@@ -67,3 +67,35 @@
 .divNome{
     margin-left: 2vw;
 }
+
+@media only screen and (max-width: 600px){
+    .imgDetails{
+        width: 96vw;
+        height: 50vh;
+    }
+    
+    .divPrincipal{
+        display: flex;
+        flex-direction: column;
+        margin-left: 0vw;
+        margin-top: 12vh;
+    }
+
+
+    .textoDetails{
+        width: 90vw;
+        height: 147px;
+        margin-left: 2vw;
+    }
+
+    .caixaDetails{
+        margin-left: 2vw;
+        margin-top: 0vh;
+        width: 94vw;
+    }
+
+    .nomeDetails{
+        width: 40vw;
+    }
+
+}

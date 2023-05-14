@@ -1,8 +1,8 @@
 import axios from "axios";
 import { useEffect, useState} from "react";
 import { Link, useParams } from "react-router-dom";
-import Nav from "../nav/nav";
 import "./details.css"
+import Nav from "../layout/nav/nav";
 
 
 const Details = () => {
@@ -49,13 +49,13 @@ const Details = () => {
 
 
             <div className="divPrincipal">
-                <div className="divIMG">
-                    <img className="imgDetails" src={detail.thumbnail} alt="" />
-                </div>
+                
+                <img className="imgDetails" src={detail.thumbnail} alt="" />
+            
                 <div className="divNome">
                     <h1 className="nomeDetails">{detail.title}</h1>
                     <p className="tipoDetails">{detail.category}</p>
-                    <p className="precoDetail">{detail.price}</p>
+                    <p className="precoDetail">R$ {detail.price}</p>
                 </div>
             </div>
             <div className="caixaDetails">

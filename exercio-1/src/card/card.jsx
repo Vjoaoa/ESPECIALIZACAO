@@ -1,7 +1,7 @@
 import axios from "axios"
 import "./card.css"
 import { useEffect, useState} from "react"
-import Nav from '../nav/nav'
+
 import { Link } from "react-router-dom"
 const Card = () => {
    const[produto,SetProduto] = useState([])
@@ -28,7 +28,7 @@ const Card = () => {
 
     <>
 
-     <Nav/> 
+        {/* <Nav/>  */}
 
         <div className="cardCompleto">
 
@@ -43,7 +43,7 @@ const Card = () => {
                             <div className="detail">
                                 <h4 className="nome">{product.brand}</h4>
                                 <p className="categoria">{product.category}</p>
-                                <p className="preco">R$ {product.price}</p>
+                                <p className="preco">R$ {product.price} </p>
                             </div>
                         </div>
                     </Link>

@@ -5,14 +5,14 @@
     width: 20vw;
     height: 18.5vh;
     margin-bottom: 4vh;
-    margin-left: 3vw;
-    
-    
+    margin-left: 3vw;    
 }
+
 .img{
     border-radius: 1vw;
     width: 8.6vw;
 }
+
 .detail{
     margin-left: 4vw;
 }
@@ -52,4 +52,25 @@
 }
 .link{
     text-decoration: none;
+}
+
+
+@media screen and (max-width: 600px){
+    .cardCompleto{
+        display: flex;
+        flex-direction: column;
+        margin-top: 12vh; 
+    }
+
+    .card{
+        width: 88vw;
+        height: 18.5vh;
+        margin-bottom: 4vh;
+        margin-left: 4vw;    
+    }
+
+    .img{
+        border-radius: 1vw;
+        width: 50vw;
+    }
 }
