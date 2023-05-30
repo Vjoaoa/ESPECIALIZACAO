@@ -1,0 +1,27 @@
+*{
+    color: red;
+}
+
+.divplayFlex{
+    display: flex;
+    
+} 
+
+.id{
+    margin-right: 20vw;
+}
+
+.nome{
+    margin-right: 20vw;
+    width: 20vh;
+}
+
+.matricula{
+    margin-right: 20vw;
+    width: 10vh;
+}
+
+.curso{
+    margin-right: 2vw;
+    width: 10vw;
+}

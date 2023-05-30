@@ -1,0 +1,24 @@
+*{
+    background-color: black;
+}
+
+.input{
+    /* position: absolute; */
+    margin-left: 4vh;
+    width: 380px;
+    height: 45px;
+    /* left: 71px;
+    top: 123px; */
+    background: #FFFFFF;
+    border-radius: 12px;
+}
+
+.bnt{
+    margin-left: 2vw;
+    width: 199px;
+    height: 45px;
+    background-color: #1A2EDF;
+    border-radius: 12px;
+    color: #FFFFFF;
+}
+
